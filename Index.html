@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+   <link rel = "icon" type = "image/x-icon" href = "/images/Logo 2 (image only).png">
+   <meta charset = "UTF-8">
+   <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+   <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+
+   <title>Homepage</title>
+
+   <link rel = "stylesheet" href = "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+   <link rel = "stylesheet" href = "css/StylishHomepage.css">
+</head>
+
+<body>
+
+<script src = "js/Scripts.js"></script>
+
+<div id = "Terms_and_conditions" class = "Terms_and_conditions_box">
+   <div class = "Terms_and_conditions_box_content">
+
+      <span class = "Close" onclick = "CloseBox()">&times;</span>
+      <h2>Terms and Conditions</h2>
+
+         <div class = "Box_content">
+         <p><strong></strong> Pear IT Solutions uses cookies to improve your experience on our site. By using our site you consent cookies.</p>
+
+         <p><strong>Types of cookies: </strong>
+
+         <p><strong>Analysis: </strong> These are cookies that allow the person responsible for them to monitor and analyze the behavior of users of the websites to which they are linked, including quantifying the impact of advertisements. The information collected through this type of cookies is used to measure the activity of the website to introduce improvements based on the analysis of the data on the use made by users of the service. These cookies analyze, for example, the pages visited, the frequency and recurrence of visits or the time spent on each page or section, among other statistical parameters.</p>
+         <p><strong>Behavioural advertising: </strong> These are cookies that store information on user behavior obtained through continuous observation of their browsing habits, and which allow the development of a specific profile to display personalized advertising based on this. In other words, they are cookies that allow the effective management of advertising spaces that have been included on the website, normally by third parties that manage the advertising spaces and that allow the content of the advertising to be adapted so that it is relevant to the user and to avoid showing advertisements that the user has already seen, as well as limiting the number of advertising impacts that we make on each user. By their policies, some advertising managers may use anonymous cookies to show advertisements of interest to you when you visit other websites.</p>
+         <p><strong>Functionality or personalization: </strong> These are cookies that allow information to be remembered so that the user accesses the service with certain characteristics that can differentiate their experience from that of other users, such as the language, the number of results to be displayed when a user performs a search, the appearance or content of the website depending on the type of browser through which the user accesses or the region from which they access, etc. Deactivating these cookies may mean that the browsing experience is less functional for the user.</p>
+         <p><strong>Strictly necessary (technical):</strong>These are cookies that allow the user to navigate through the website and use the different options or services available, including those used to enable the operational management of the website and enable functions and services, such as, for example, controlling traffic and data communication, identifying the session, accessing restricted access parts, carrying out the purchase process, remembering an order, managing payment, controlling fraud linked to the security of the service, requesting registration or participation in an event, counting views for the billing licenses for the software on which the service operates, using security elements during navigation, storing content for the dissemination of videos or sound, enabling dynamic content or sharing content through social networks.</p>
+         <p><strong>Strictly necessary (technical):</strong>These are cookies that allow the user to navigate through the website and use the different options or services available, including those used to enable the operational management of the website and enable functions and services, such as, for example, controlling traffic and data communication, identifying the session, accessing restricted access parts, carrying out the purchase process, remembering an order, managing payment, controlling fraud linked to the security of the service, requesting registration or participation in an event, counting views for the billing licenses for the software on which the service operates, using security elements during navigation, storing content for the dissemination of videos or sound, enabling dynamic content or sharing content through social networks.</p>
+
+         <p><strong>Pear IT Solutions reserves the right to modify this Cookie Policy at any time and without prior notice, in response to regulatory requirements or to improve the website.</strong></p>
+         <p><strong>Despite the efforts we may make to notify you of any significant changes, we recommend that you review the Cookie Policy when accessing the website.</strong></p>
+
+         </div>
+
+         <button class = "Accept" onclick = "AcceptTerms()">Accept</button>
+   </div>
+</div>
+
+<script>
+
+var Terms_and_conditions_box = document.getElementById("Terms_and_conditions");
+
+window.onload = function() 
+{
+   Terms_and_conditions_box.style.display = "block";
+}
+
+function CloseBox() 
+{
+   Terms_and_conditions_box.style.display = "none";
+}
+
+function AcceptTerms()
+{
+   alert("You have accepted the Terms and Conditions.");
+   Terms_and_conditions_box.style.display = "none";
+}
+
+window.onclick = function(event) 
+{
+   if (event.target == Terms_and_conditions_box) 
+   {
+      Terms_and_conditions_box.style.display = "none";
+   }
+}
+
+</script>
+
+<div class = "Loader">
+   <h4>Loading...</h4>
+</div>
+      
+<header class = "Top_extra_options">
+
+   <div class = "Extra_options">
+            
+      <input type = "search" value = "" id = "search" placeholder = "Keywords, concepts" onchange = "openPage()">
+              
+      &emsp;&emsp;
+
+      <button onclick="checkSearchInput()">Search</button>
+
+      &emsp;&emsp;
+      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+         
+
+      <h1><b>IT services in the palm of your hand​</b></h1>
+   
+      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+    
+   
+      <div class="gtranslate_wrapper"></div>
+      <script>window.gtranslateSettings = {"default_language":"pt","languages":["pt","ar","es","zh-CN","zh-TW","fr","it","hi","de","ko","ja","en"],"wrapper_selector":".gtranslate_wrapper","alt_flags":{"en":"usa","pt":"brazil"}}</script>
+      <script src="https://cdn.gtranslate.net/widgets/latest/popup.js" defer></script>
+   </div>
+
+<nav class = "Top_main_options">
+
+   <a href="Homepage.html" class="logo"> <img src = "images/Logo 2 (image only).png" alt = ""  width="75" height="75" ></a>
+
+   <div class = "Top_main_options_links">
+   <a href="Homepage.html">Home</a>
+      <div class = "Clients_drop_menu"> &nbsp; &nbsp; 
+      <button onclick = "Drops_C()" class = "Drop_client">Clients</button>
+      <div id = "Client_drop" class = "Client_drop_options">
+      <a href = "Clients (Gamming Cafe).html">Gamming cafe</a>
+      <a href = "Clients (Crisp).html">Crisp</a>
+      <a href = "Clients (Hostinger).html">Hostinger</a>
+      <a href = "Clients (G Translate).html">G Translate</a>
+      </div>
+   </div>
+
+   <a href="Team members.html">Team</a>
+      <div class = "Services_drop_menu"> &nbsp; &nbsp;
+      <button onclick = "Drops_S()" class = "Services_drop">Services</button>
+      <div id = "Services_drop" class = "Services_drop_options">
+      <a href = "Managed IT Services.html">Managed IT</a>
+      <a href = "Networking Services.html">Networking</a>
+      <a href = "Cybersecurity Services.html">Cybersecurity</a>
+      <a href = "Cloud Services.html">Cloud</a>
+      <a href = "IT Consulting Services.html">IT consulting</a>
+      <a href = "Help Desk Services.html">Help Desk</a>
+      <a href = "Marketing Services.html">Marketing </a>
+      <a href = "Database Services.html">Database management</a>
+         </div>
+      </div>
+   </div>
+
+</nav>
+
+</header>
+
+<section class = "Intro_section" id = "Introduction">
+
+   <div class = "Slides">
+      <div class = "slide slide-1">
+         <img src = "images/Home image 3.jpg" alt = ""/>
+      </div>
+
+      <div class = "slide slide-2">
+         <img src = "images/Home image 5.png" alt = ""/>
+      </div>
+
+      <div class = "slide slide-3">
+         <img src = "images/Home image 1.jpg" alt = ""/>
+      </div>
+          
+</section>
+   
+<section class = "about" id = "About">
+
+   <h1 class = "About_Us">About Us</h1>
+      <div class = "About_text">
+         <div class = "About_content">
+            <h3>What we do?</h3>
+            <p>PearIT is an IT Company located in the El Paso, TX, Region. We strive to deliver high-quality services and peace of mind to small and medium businesses.​
+               Managed IT Services, Networking Solutions, Cybersecurity Services, Cloud Services, IT consulting, & 24/7 help desk support.</p>
+         </div>
+
+         <div class = "About_image">
+            <img src = "images/About Us section 2.svg" alt = "">
+         </div>
+      </div>
+</section>
+
+<section class = "Facts">
+
+   <div class = "Fact">
+      <img src = "images/Facts_clients.svg" alt = "">
+      <h3>25</h3>
+      <p>Actual costumers</p>
+   </div>
+
+   <div class = "Fact">
+      <img src = "" alt = "">
+      <h3></h3>
+      <p></p>
+   </div>
+      
+   <div class = "Fact">
+      <img src = "images/Fact_partners.svg" alt = "">
+      <h3>4</h3>
+      <p>Clients</p>
+   </div>
+</section>
+
+
+<section class = "why" id = "Why">
+
+   <h1 class = "Why_Us">Why Us?</h1>
+   <div class = "Why_text">
+      <div class = "Why_content">
+         <h3>Why you should choose us?</h3>
+         <p>PearIT strives to deliver dependable digital solutions ​
+            Clients who renew servicing are enrolled in our reward system (bronze, silver, gold)​   
+            24/7 Helpdesk support (yes, even on holidays)​
+            In-house application for all managed service needs in one app​</p>
+      </div>
+
+      <div class = "Why_image">
+         <img src = "images/About-us-svg.svg" alt = "">
+      </div>
+   </div>
+</section>
+
+<h1 class = "Title"> <span>Visit Us</span> in person </h1>
+
+<div class="Feedback_Map_sections">
+
+   <div class="Feedback_section">
+      <h2>Feedback Form</h2>
+
+<form id="Feedback_input" onsubmit="return FeedbackClear()">
+   <div class="Feedback_input">
+         <h3>Name</h3>
+         <input>
+      </div>
+
+   <div class="Feedback_input">
+      <h3>Email Address</h3>
+      <input>
+   </div>
+
+   <div class="Feedback_input">
+      <h3>Your Feedback</h3>
+      <textarea></textarea>
+   </div>
+              
+   <div class="Feedback_input">
+      <input type="submit">
+   </div>
+
+</form>
+   </div>
+
+<div class="Map">
+   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3392.194942777377!2d-106.33989892362077!3d31.765168574102855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86e744c82d9a1e1f%3A0xe2b0fc433984ecb3!2s1850%20Trawood%20Dr%2C%20El%20Paso%2C%20TX%2079935!5e0!3m2!1sen!2sus!4v1733256739409!5m2!1sen!2sus"   width = "700" height = "450" style = "border:0;" allowfullscreen = "" loading = "lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+   </iframe>
+   </div>
+   </div>
+</div>
+
+<section>
+
+   <div class = "FAQ">
+
+      <h1 class = "Title"> frequently asked question <span></span> </h1>
+
+         <div class ="FAQs">
+            <details>
+               <summary>What IT services do you offer for small businesses in El Paso?</summary>
+               <p>We provide a range of services, including network setup and maintenance, cybersecurity solutions, hardware and software installation, cloud services, data backup and recovery, and ongoing IT support</p>
+            </details>
+
+            <details>
+               <summary>How quickly can you respond to IT issues or emergencies?</summary>
+               <p>We prioritize fast response times and aim to address urgent IT issues within the same business day. For less critical concerns, we will schedule service based on your availability.</p>
+            </details>
+
+            <details>
+               <summary>Do you offer remote IT support, or do you only work on-site?</summary>
+               <p>We offer both remote and on-site IT support to ensure we can address your needs efficiently and minimize downtime for your business.</p>
+            </details>
+
+            <details>
+               <summary>Can you help with upgrading or modernizing our current IT infrastructure?</summary>
+               <p>Yes, we specialize in assessing your current setup and recommending cost-effective upgrades to improve your business’s efficiency, security, and scalability.</p>
+            </details>
+
+            <details>
+               <summary>Do you work with businesses in specific industries or all small businesses?</summary>
+               <p>We serve all small businesses in El Paso, including those in healthcare, retail, real estate, hospitality, and more. We customize our IT solutions to meet the unique needs of your industry.</p>
+            </details>
+         </div>
+   </div>
+</section>
+
+<div class = "Footer">
+
+   <div class="Footer_content">
+      
+      <div class = "Column">
+         <h1>Quick Links: </h1>
+          <ul>
+            <li><a href = "Homepage.html"> <i class = "fa fa-hand-o-right"></i> Home </a></li>
+            <li><a href = "Clients (Gamming Cafe).html"> <i class = "fa fa-hand-o-right"></i> Gamming Cafe </a></li>
+            <li><a href = "Clients (Crisp).html"> <i class = "fa fa-hand-o-right"></i> Crisp </a></li>
+            <li><a href = "Team members.html"> <i class = "fa fa-hand-o-right"></i> Team </a></li>
+            <li><a href = "Clients (Hostinger).html"> <i class = "fa fa-hand-o-right"></i> Hostinger </a></li>
+            <li><a href = "Clients (G Translate).html"> <i class = "fa fa-hand-o-right"></i> G Translate </a></li>
+          </ul>
+      </div>
+
+      <div class = "Column">         
+         <h1>Services: </h1>
+           <ul>
+            <li><a href = "Managed IT Services.html"> <i class = "fa fa-caret-right"></i> Managed IT</a></li>
+            <li><a href = "Networking Services.html"> <i class = "fa fa-caret-right"></i> Networking </a></li>
+            <li><a href = "Cybersecurity Services.html"> <i class = "fa fa-caret-right"></i> Cybersecurity </a></li>
+            <li><a href = "Cloud Services.html"> <i class = "fa fa-caret-right"></i> Cloud </a></li>
+            <li><a href = "IT Consulting Services.html"> <i class = "fa fa-caret-right"></i> IT Consulting </a></li>
+            <li><a href = "Help Desk Services.html"> <i class = "fa fa-caret-right"></i> Help Desk </a></li>
+            <li><a href = "Marketing Services.html"> <i class = "fa fa-caret-right"></i> Marketing</a></li>
+            <li><a href = "Database Services.html"> <i class = "fa fa-caret-right"></i> Databases</a></li>
+           </ul>
+      </div>
+
+      <div class="Column">
+         <h1>Contact: </h1>
+           <ul>
+            <li><a href = ""> <i class = "fa fa-phone"></i> +1 (915)-587-2647</a></li>
+            <li><a href = ""> <i class = "fa fa-envelope"></i> PearIT@gmail.com</a></li>
+            <li><a href = ""> <i class = "fa fa-map-marker"></i> 1850 Trawood Dr. El Paso, Texas</a></li>
+           </ul>
+      </div>
+
+      <div class="Column">
+         <h1>Office Hours: </h1> 
+           <ul>
+            <li>Monday: 9:00 AM to 5:00 PM</li>
+            <li>Tuesday: 9:00 AM to 5:00 PM</li>
+            <li>Wednesday: 9:00 AM to 5:00 PM</li>
+            <li>Thuerday: 9:00 AM to 5:00 PM</li>
+            <li>Friday: 9:00 AM to 5:00 PM</li>
+           </ul>
+      </div>
+
+   <div class="Column Social">
+         <h1>Social: </h1>
+           <ul>
+            <li><a href=""><img src= "images/Facebook.svg" width = "32" style = "width: 32px;"></a></li>
+            <li><a href=""><img src= "images/Instagram.svg" width = "32" style = "width: 32px;"></a></li>
+            <li><a href=""><img src= "images/Twitter 3.svg" width = "32" style = "width: 32px;"></a></li>
+           </ul>
+
+     <br>
+     <br>
+
+   <img src="images/QR code.svg" width = "110" style = "width: 110px;">
+</div>
+   
+   
+<div class = "Copyright"></div>
+</div></div>
+
+<div class = "Footer_botton">
+   <h4><i class="fa fa-copyright"></i> Copyright 2024</h4>
+   <h4>Designed by: PearIT Website Development team</h4>   
+</div>
+
+<script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID = "189ef6db-72b4-4c4f-8584-3a7cdd85e394";(function(){d=document;
+        s = d.createElement("script");s.src = "https://client.crisp.chat/l.js";s.async = 1;d.getElementsByTagName("head")[0].appendChild(s);})();
+</script>
+  
+</body>
+</html>
+
